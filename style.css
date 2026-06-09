@@ -197,7 +197,7 @@ text-align:center;
 }
 /* update */
 
-.navbar{
+/* .navbar{
     position: fixed;
     top: 0;
     left: 0;
@@ -211,4 +211,125 @@ text-align:center;
     padding: 15px 40px;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+} */
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media screen and (max-width: 768px){
+
+body{
+padding-top:70px;
+}
+
+/* Navbar */
+
+.navbar{
+padding:12px 15px;
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+font-size:22px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.nav-links a{
+font-size:14px;
+}
+
+.nav-actions{
+width:100%;
+justify-content:center;
+}
+
+/* Hero Section */
+
+.hero{
+height:auto;
+min-height:100vh;
+}
+
+.hero-overlay{
+padding:40px 20px;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content{
+max-width:100%;
+}
+
+.hero-content h1{
+font-size:34px;
+line-height:1.3;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.hero-buttons{
+flex-direction:column;
+width:100%;
+}
+
+.hero-buttons button{
+width:100%;
+}
+
+/* Sections */
+
+.section{
+padding:50px 20px;
+}
+
+.section-title{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+/* Cards */
+
+.card-grid,
+.stories-grid,
+.partner-grid,
+.community-grid{
+grid-template-columns:1fr;
+}
+
+/* Images */
+
+.destination-card img,
+.story-card img{
+height:220px;
+}
+
+/* Footer */
+
+footer{
+padding:30px 20px;
+}
+
+}
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
