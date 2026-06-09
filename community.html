@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Travel Community | TripShare</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="community.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-earth-asia"></i>
+TripShare
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="community.html" class="active">Community</a></li>
+<li><a href="partner.html">Find Partner</a></li>
+<li><a href="budget.html">Budget Planner</a></li>
+</ul>
+
+<div class="nav-right">
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+<button id="openModal">
+Create Post
+</button>
+
+</div>
+
+</nav>
+
+<!-- Layout -->
+
+<div class="community-layout">
+
+<!-- Feed -->
+
+<div class="feed">
+
+<h2>Travel Discussions</h2>
+
+<!-- Post -->
+
+<div class="post-card">
+
+<div class="post-header">
+
+<img
+src="https://i.pravatar.cc/50?img=12"
+>
+
+<div>
+
+<h4>Rohit Sharma</h4>
+
+<span>2 hours ago</span>
+
+</div>
+
+</div>
+
+<p>
+
+Planning a solo trip to Ladakh next month.
+Any recommendations?
+
+</p>
+
+<div class="post-actions">
+
+<button class="like-btn">
+❤️ Like
+</button>
+
+<button class="comment-btn">
+💬 Comment
+</button>
+
+</div>
+
+</div>
+
+<!-- Post -->
+
+<div class="post-card">
+
+<div class="post-header">
+
+<img
+src="https://i.pravatar.cc/50?img=8"
+>
+
+<div>
+
+<h4>Ananya Singh</h4>
+
+<span>5 hours ago</span>
+
+</div>
+
+</div>
+
+<p>
+
+Best hidden places in Himachal?
+Share your experiences.
+
+</p>
+
+<div class="post-actions">
+
+<button class="like-btn">
+❤️ Like
+</button>
+
+<button class="comment-btn">
+💬 Comment
+</button>
+
+</div>
+
+</div>
+
+<!-- Post -->
+
+<div class="post-card">
+
+<div class="post-header">
+
+<img
+src="https://i.pravatar.cc/50?img=18"
+>
+
+<div>
+
+<h4>Vikas Patel</h4>
+
+<span>Yesterday</span>
+
+</div>
+
+</div>
+
+<p>
+
+Completed a 7-day Spiti Valley road trip.
+Amazing experience.
+
+</p>
+
+<div class="post-actions">
+
+<button class="like-btn">
+❤️ Like
+</button>
+
+<button class="comment-btn">
+💬 Comment
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<!-- Trending -->
+
+<div class="sidebar-card">
+
+<h3>🔥 Trending Topics</h3>
+
+<ul>
+
+<li>#LadakhTrip</li>
+<li>#GoaBudgetTravel</li>
+<li>#SoloTraveler</li>
+<li>#SpitiValley</li>
+<li>#BackpackingIndia</li>
+
+</ul>
+
+</div>
+
+<!-- Top Travelers -->
+
+<div class="sidebar-card">
+
+<h3>🏆 Top Travelers</h3>
+
+<div class="traveler">
+
+<img src="https://i.pravatar.cc/40?img=21">
+
+<span>Priya Sharma</span>
+
+</div>
+
+<div class="traveler">
+
+<img src="https://i.pravatar.cc/40?img=32">
+
+<span>Rakesh Verma</span>
+
+</div>
+
+<div class="traveler">
+
+<img src="https://i.pravatar.cc/40?img=41">
+
+<span>Amit Kumar</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Create Post Modal -->
+
+<div class="modal" id="postModal">
+
+<div class="modal-content">
+
+<span id="closeModal">
+&times;
+</span>
+
+<h2>Create Post</h2>
+
+<input
+type="text"
+placeholder="Post Title"
+id="postTitle"
+>
+
+<textarea
+placeholder="Share your travel experience..."
+id="postText"
+></textarea>
+
+<button id="publishPost">
+Publish Post
+</button>
+
+</div>
+
+</div>
+
+<script src="community.js"></script>
+
+</body>
+
+</html>

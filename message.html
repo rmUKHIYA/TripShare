@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Messages | TripShare</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="message.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="sidebar-header">
+
+<h2>Messages</h2>
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchUser"
+placeholder="Search traveler...">
+
+</div>
+
+<div class="user-list" id="userList">
+
+<div class="user active-user">
+
+<img src="https://i.pravatar.cc/60?img=12">
+
+<div>
+
+<h4>Rohit Sharma</h4>
+
+<span class="online">
+● Online
+</span>
+
+</div>
+
+</div>
+
+<div class="user">
+
+<img src="https://i.pravatar.cc/60?img=25">
+
+<div>
+
+<h4>Priya Singh</h4>
+
+<span class="offline">
+● Offline
+</span>
+
+</div>
+
+</div>
+
+<div class="user">
+
+<img src="https://i.pravatar.cc/60?img=35">
+
+<div>
+
+<h4>Amit Kumar</h4>
+
+<span class="online">
+● Online
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Chat Area -->
+
+<div class="chat-area">
+
+<div class="chat-header">
+
+<img src="https://i.pravatar.cc/60?img=12">
+
+<div>
+
+<h3>Rohit Sharma</h3>
+
+<p>Travel Partner</p>
+
+</div>
+
+</div>
+
+<div class="chat-messages"
+id="chatMessages">
+
+<div class="message received">
+
+Hey! Ready for Goa Trip?
+
+</div>
+
+<div class="message sent">
+
+Yes, looking forward to it.
+
+</div>
+
+</div>
+
+<!-- Image Preview -->
+
+<div id="imagePreview"></div>
+
+<!-- Input Area -->
+
+<div class="chat-input">
+
+<button id="emojiBtn">
+😊
+</button>
+
+<input
+type="text"
+id="messageInput"
+placeholder="Type a message...">
+
+<input
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden>
+
+<button id="imageBtn">
+📷
+</button>
+
+<button id="sendBtn">
+➤
+</button>
+
+</div>
+
+<!-- Emoji Picker -->
+
+<div id="emojiPicker">
+
+<span>😀</span>
+<span>😂</span>
+<span>😍</span>
+<span>😎</span>
+<span>🔥</span>
+<span>✈️</span>
+<span>🏔️</span>
+<span>🌍</span>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="message.js"></script>
+
+</body>
+
+</html>

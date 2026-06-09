@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Find Travel Partner | TripShare</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="partner.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-earth-asia"></i>
+TripShare
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="community.html">Community</a></li>
+<li><a href="partner.html" class="active">Find Partner</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+<button onclick="window.location.href='message.html'">
+Chat
+</button>
+
+
+<button id="openTripModal">
++ Create Trip
+</button>
+
+</div>
+
+</nav>
+
+<!-- Header -->
+
+<section class="partner-header">
+
+<h1>Find Travel Partners</h1>
+
+<p>
+Connect with travelers going to the same destination.
+</p>
+
+</section>
+
+<!-- Search -->
+
+<section class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Destination..."
+>
+
+<input
+type="date"
+id="dateFilter"
+>
+
+<button onclick="searchTrips()">
+Search
+</button>
+
+</section>
+
+<!-- Trip Listings -->
+
+<section class="trip-grid" id="tripGrid">
+
+<div class="trip-card">
+
+<div class="status open">
+OPEN
+</div>
+
+<div class="user-info">
+
+<img src="https://i.pravatar.cc/80?img=15">
+
+<div>
+
+<h3>Rohit Sharma</h3>
+
+<p>Delhi</p>
+
+</div>
+
+</div>
+
+<h2>Delhi → Goa</h2>
+
+<p>📅 15 July 2026</p>
+
+<p>💰 Budget ₹10,000</p>
+
+<p>👥 Need 2 Partners</p>
+
+<div class="actions">
+
+<button class="join-btn">
+Join Trip
+</button>
+
+<button class="chat-btn">
+Chat
+</button>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<div class="status full">
+FULL
+</div>
+
+<div class="user-info">
+
+<img src="https://i.pravatar.cc/80?img=22">
+
+<div>
+
+<h3>Priya Singh</h3>
+
+<p>Mumbai</p>
+
+</div>
+
+</div>
+
+<h2>Mumbai → Ladakh</h2>
+
+<p>📅 25 July 2026</p>
+
+<p>💰 Budget ₹20,000</p>
+
+<p>👥 Group Complete</p>
+
+<div class="actions">
+
+<button disabled>
+Trip Full
+</button>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<div class="status open">
+OPEN
+</div>
+
+<div class="user-info">
+
+<img src="https://i.pravatar.cc/80?img=35">
+
+<div>
+
+<h3>Amit Kumar</h3>
+
+<p>Pune</p>
+
+
+
+</div>
+
+</div>
+
+<h2>Pune → Spiti</h2>
+
+<p>📅 10 August 2026</p>
+
+<p>💰 Budget ₹18,000</p>
+
+<p>👥 Need 3 Partners</p>
+
+<div class="actions">
+
+<button class="join-btn">
+Join Trip
+</button>
+
+<button class="chat-btn">
+Chat
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Create Trip Modal -->
+
+<div class="modal" id="tripModal">
+
+<div class="modal-content">
+
+<span id="closeModal">
+&times;
+</span>
+
+<h2>Create Travel Group</h2>
+
+<input
+type="text"
+id="destination"
+placeholder="Destination"
+>
+
+<input
+type="date"
+id="tripDate"
+>
+
+<input
+type="number"
+id="budget"
+placeholder="Budget"
+>
+
+<input
+type="number"
+id="partners"
+placeholder="Partners Needed"
+>
+
+<button id="createTrip">
+Create Trip
+</button>
+
+</div>
+
+</div>
+
+<script src="partner.js"></script>
+
+</body>
+
+</html>

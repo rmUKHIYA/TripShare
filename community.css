@@ -1,0 +1,185 @@
+.community-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+padding:40px 80px;
+}
+
+.feed{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.post-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.post-header{
+display:flex;
+gap:15px;
+align-items:center;
+margin-bottom:15px;
+}
+
+.post-header img{
+width:50px;
+height:50px;
+border-radius:50%;
+}
+
+.post-header span{
+font-size:13px;
+color:gray;
+}
+
+.post-actions{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.post-actions button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#f1f5f9;
+}
+
+.sidebar{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.sidebar-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.sidebar-card ul{
+list-style:none;
+margin-top:15px;
+}
+
+.sidebar-card li{
+margin-bottom:10px;
+}
+
+.traveler{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:15px;
+}
+
+.traveler img{
+border-radius:50%;
+}
+
+.nav-right{
+display:flex;
+gap:10px;
+}
+
+#darkModeBtn,
+#openModal{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+#openModal{
+background:#2563eb;
+color:white;
+}
+
+.modal{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+padding:30px;
+width:500px;
+border-radius:15px;
+position:relative;
+}
+
+.modal-content input,
+.modal-content textarea{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.modal-content textarea{
+height:150px;
+resize:none;
+}
+
+.modal-content button{
+margin-top:20px;
+padding:12px;
+width:100%;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+#closeModal{
+position:absolute;
+right:20px;
+top:15px;
+font-size:28px;
+cursor:pointer;
+}
+
+.dark-mode{
+background:#0f172a;
+color:white;
+}
+
+.dark-mode .post-card,
+.dark-mode .sidebar-card,
+.dark-mode .modal-content{
+background:#1e293b;
+color:white;
+}
+
+.dark-mode .post-actions button{
+background:#334155;
+color:white;
+}
+
+@media(max-width:900px){
+
+.community-layout{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.modal-content{
+width:90%;
+}
+
+}

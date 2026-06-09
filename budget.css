@@ -1,0 +1,129 @@
+body{
+background:#f8fafc;
+font-family:Arial,sans-serif;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:40px 80px;
+}
+
+.dashboard-card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.calculator,
+.expense-tracker,
+.converter,
+.analytics{
+padding:40px 80px;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+}
+
+.form-grid input{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.calculator button,
+.converter button,
+.expense-form button{
+margin-top:15px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.expense-form{
+display:flex;
+gap:15px;
+margin:20px 0;
+}
+
+.expense-form input{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+}
+
+th,td{
+padding:15px;
+border:1px solid #eee;
+}
+
+.converter-box{
+background:white;
+padding:30px;
+border-radius:15px;
+max-width:600px;
+}
+
+.converter-box input,
+.converter-box select{
+padding:12px;
+margin-right:10px;
+}
+
+.analytics canvas{
+background:white;
+padding:20px;
+border-radius:15px;
+}
+
+.dark-mode{
+background:#0f172a;
+color:white;
+}
+
+.dark-mode .dashboard-card,
+.dark-mode table,
+.dark-mode .converter-box{
+background:#1e293b;
+color:white;
+}
+
+@media(max-width:768px){
+
+.dashboard{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.calculator,
+.expense-tracker,
+.converter,
+.analytics{
+padding:20px;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.expense-form{
+flex-direction:column;
+}
+
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | TripShare</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="profile.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-earth-asia"></i>
+TripShare
+</div>
+
+<div class="profile-actions">
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+<button id="editProfileBtn">
+Edit Profile
+</button>
+
+</div>
+
+</nav>
+
+<!-- Cover Photo -->
+
+<section class="cover-section">
+
+<img
+class="cover-photo"
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+</section>
+
+<!-- Profile Card -->
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<img
+class="profile-pic"
+src="https://i.pravatar.cc/200?img=12">
+
+<h2>Ritik Mukhiya</h2>
+
+<p class="bio">
+Traveler | Explorer | Photographer
+</p>
+
+<div class="stats">
+
+<div>
+<h3>250</h3>
+<p>Trips</p>
+</div>
+
+<div>
+<h3>12.5K</h3>
+<p>Followers</p>
+</div>
+
+<div>
+<h3>980</h3>
+<p>Following</p>
+</div>
+
+</div>
+
+<div class="social-links">
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Achievements -->
+
+<section class="achievement-section">
+
+<h2>Travel Achievements</h2>
+
+<div class="badge-grid">
+
+<div class="badge">
+🏔 Mountain Explorer
+</div>
+
+<div class="badge">
+🌍 World Traveler
+</div>
+
+<div class="badge">
+📸 Photographer
+</div>
+
+<div class="badge">
+✈ Frequent Flyer
+</div>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery-section">
+
+<h2>Travel Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+
+<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+
+<img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800">
+
+</div>
+
+</section>
+
+<!-- Saved Trips -->
+
+<section class="saved-trips">
+
+<h2>Saved Trips</h2>
+
+<div class="trip-grid">
+
+<div class="saved-card">
+🏔 Ladakh Adventure
+</div>
+
+<div class="saved-card">
+🏖 Goa Beach Tour
+</div>
+
+<div class="saved-card">
+❄ Kashmir Winter Trip
+</div>
+
+</div>
+
+</section>
+
+<!-- Timeline -->
+
+<section class="timeline-section">
+
+<h2>Activity Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>June 2026</h3>
+
+<p>
+Shared Manali Adventure Trip
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>May 2026</h3>
+
+<p>
+Completed Spiti Valley Journey
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>April 2026</h3>
+
+<p>
+Reached 10K Followers
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Edit Profile Modal -->
+
+<div class="modal" id="profileModal">
+
+<div class="modal-content">
+
+<span id="closeModal">
+&times;
+</span>
+
+<h2>Edit Profile</h2>
+
+<input
+type="text"
+id="nameInput"
+placeholder="Name">
+
+<textarea
+id="bioInput"
+placeholder="Bio">
+</textarea>
+
+<button id="saveProfile">
+Save Changes
+</button>
+
+</div>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+
+</html>

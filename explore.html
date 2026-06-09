@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Explore Trips | TripShare</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="explore.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-earth-asia"></i>
+TripShare
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html" class="active">Explore</a></li>
+<li><a href="community.html">Community</a></li>
+<li><a href="partner.html">Find Partner</a></li>
+<li><a href="budget.html">Budget Planner</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Search -->
+
+<section class="explore-header">
+
+<h1>Explore Trips</h1>
+
+<p>
+Discover amazing destinations shared by travelers.
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search destination..."
+>
+
+<button onclick="searchTrips()">
+<i class="fa-solid fa-search"></i>
+Search
+</button>
+
+</div>
+
+</section>
+
+<!-- Filters -->
+
+<section class="filters">
+
+<select id="budgetFilter">
+
+<option value="all">Budget</option>
+<option value="low">Below ₹10,000</option>
+<option value="medium">₹10,000 - ₹20,000</option>
+<option value="high">Above ₹20,000</option>
+
+</select>
+
+<select id="durationFilter">
+
+<option value="all">Duration</option>
+<option value="3">3 Days</option>
+<option value="5">5 Days</option>
+<option value="7">7 Days</option>
+
+</select>
+
+<select id="sortTrips">
+
+<option value="latest">Latest</option>
+<option value="budgetLow">Budget Low to High</option>
+<option value="budgetHigh">Budget High to Low</option>
+
+</select>
+
+<button onclick="applyFilters()">
+Apply
+</button>
+
+</section>
+
+<!-- Trip Cards -->
+
+<section class="trip-container" id="tripContainer">
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<div class="trip-content">
+
+<h3>Manali Adventure</h3>
+
+<p>5 Days</p>
+
+<p>Budget ₹12,000</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86">
+
+<div class="trip-content">
+
+<h3>Goa Beach Trip</h3>
+
+<p>4 Days</p>
+
+<p>Budget ₹8,000</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b">
+
+<div class="trip-content">
+
+<h3>Ladakh Road Trip</h3>
+
+<p>7 Days</p>
+
+<p>Budget ₹25,000</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<div class="trip-content">
+
+<h3>Kashmir Escape</h3>
+
+<p>6 Days</p>
+
+<p>Budget ₹18,000</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+
+<div class="trip-content">
+
+<h3>Spiti Valley</h3>
+
+<p>7 Days</p>
+
+<p>Budget ₹22,000</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+<div class="trip-card">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+
+<div class="trip-content">
+
+<h3>Rishikesh Adventure</h3>
+
+<p>3 Days</p>
+
+<p>Budget ₹6,500</p>
+
+<a href="trip-details.html">
+View Details
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Pagination -->
+
+<section class="pagination">
+
+<button>Previous</button>
+
+<button class="active-page">1</button>
+
+<button>2</button>
+
+<button>3</button>
+
+<button>Next</button>
+
+</section>
+
+<script src="explore.js"></script>
+
+</body>
+
+</html>

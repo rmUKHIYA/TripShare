@@ -1,0 +1,222 @@
+.cover-photo{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.profile-section{
+margin-top:-80px;
+display:flex;
+justify-content:center;
+}
+
+.profile-card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+width:500px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.profile-pic{
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
+.bio{
+margin:15px 0;
+color:#666;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+margin:25px 0;
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:20px;
+font-size:28px;
+}
+
+.social-links a{
+color:#2563eb;
+}
+
+.achievement-section,
+.gallery-section,
+.saved-trips,
+.timeline-section{
+padding:60px 80px;
+}
+
+.badge-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:25px;
+}
+
+.badge{
+background:#2563eb;
+color:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:25px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.04);
+}
+
+.trip-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:25px;
+}
+
+.saved-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.timeline{
+margin-top:30px;
+border-left:4px solid #2563eb;
+padding-left:25px;
+}
+
+.timeline-item{
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.profile-actions{
+display:flex;
+gap:10px;
+}
+
+.profile-actions button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+#editProfileBtn{
+background:#2563eb;
+color:white;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+padding:30px;
+width:450px;
+border-radius:15px;
+position:relative;
+}
+
+.modal-content input,
+.modal-content textarea{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.modal-content textarea{
+height:120px;
+}
+
+.modal-content button{
+margin-top:20px;
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+}
+
+#closeModal{
+position:absolute;
+right:20px;
+top:10px;
+font-size:30px;
+cursor:pointer;
+}
+
+.dark-mode{
+background:#0f172a;
+color:white;
+}
+
+.dark-mode .profile-card,
+.dark-mode .saved-card,
+.dark-mode .timeline-item,
+.dark-mode .modal-content{
+background:#1e293b;
+color:white;
+}
+
+@media(max-width:768px){
+
+.profile-card{
+width:90%;
+}
+
+.badge-grid,
+.gallery-grid,
+.trip-grid{
+grid-template-columns:1fr;
+}
+
+.achievement-section,
+.gallery-section,
+.saved-trips,
+.timeline-section{
+padding:25px;
+}
+
+}

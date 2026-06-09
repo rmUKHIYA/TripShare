@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Trip Details | TripShare</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet"
+href="trip-details.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-earth-asia"></i>
+TripShare
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="community.html">Community</a></li>
+
+</ul>
+
+</nav>
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<div class="slider">
+
+<img
+id="sliderImage"
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+>
+
+<button class="prev"
+onclick="prevSlide()">
+❮
+</button>
+
+<button class="next"
+onclick="nextSlide()">
+❯
+</button>
+
+</div>
+
+</section>
+
+<!-- TRIP OVERVIEW -->
+
+<section class="trip-overview">
+
+<h1>Manali Adventure Trip</h1>
+
+<div class="trip-meta">
+
+<span>
+📍 Manali
+</span>
+
+<span>
+🗓 5 Days
+</span>
+
+<span>
+💰 ₹12,000
+</span>
+
+<span>
+⭐ 4.8 Rating
+</span>
+
+</div>
+
+<p>
+
+Experience beautiful mountains,
+snowfall and local culture.
+
+</p>
+
+<div class="trip-actions">
+
+<button id="likeBtn">
+❤️ Like
+</button>
+
+<button id="saveBtn">
+🔖 Save
+</button>
+
+<button id="shareBtn">
+📤 Share
+</button>
+
+</div>
+
+</section>
+
+<!-- BUDGET -->
+
+<section class="budget-section">
+
+<h2>Budget Breakdown</h2>
+
+<div class="budget-grid">
+
+<div class="budget-card">
+Hotel ₹5000
+</div>
+
+<div class="budget-card">
+Food ₹3000
+</div>
+
+<div class="budget-card">
+Travel ₹3000
+</div>
+
+<div class="budget-card">
+Other ₹1000
+</div>
+
+</div>
+
+</section>
+
+<!-- VISUAL BUDGET CHART -->
+
+<h3 style="text-align:center;">
+Budget Distribution
+</h3>
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+<!-- ITINERARY -->
+
+<section class="itinerary">
+
+<h2>Trip Itinerary</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Day 1</h3>
+
+<p>
+Arrival & Local Market
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Day 2</h3>
+
+<p>
+Solang Valley Visit
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Day 3</h3>
+
+<p>
+Snow Activities
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Day 4</h3>
+
+<p>
+Atal Tunnel Tour
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Day 5</h3>
+
+<p>
+Return Journey
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOTELS -->
+
+<section class="hotel-section">
+
+<h2>Recommended Hotels</h2>
+
+<div class="hotel-grid">
+
+<div class="hotel-card">
+
+<h3>Snow Peak Resort</h3>
+
+<p>
+⭐⭐⭐⭐
+</p>
+
+<p>
+₹2500 / Night
+</p>
+
+</div>
+
+<div class="hotel-card">
+
+<h3>Mountain View Hotel</h3>
+
+<p>
+⭐⭐⭐⭐⭐
+</p>
+
+<p>
+₹4000 / Night
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="map-section">
+
+<h2>Trip Route</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=manali&t=&z=10&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews">
+
+<h2>Traveler Reviews</h2>
+
+<div class="review-card">
+
+<h4>Rohit Sharma</h4>
+
+<p>
+⭐⭐⭐⭐⭐
+</p>
+
+<p>
+Amazing experience.
+Highly recommended.
+</p>
+
+</div>
+
+<div class="review-card">
+
+<h4>Priya Singh</h4>
+
+<p>
+⭐⭐⭐⭐
+</p>
+
+<p>
+Beautiful destination.
+Great food and weather.
+</p>
+
+</div>
+
+</section>
+
+<!-- COMMENTS -->
+
+<section class="comments">
+
+<h2>Comments</h2>
+
+<textarea
+id="commentBox"
+placeholder="Write comment...">
+</textarea>
+
+<button
+onclick="addComment()">
+Post Comment
+</button>
+
+<div id="commentList"></div>
+
+</section>
+
+<!-- RELATED TRIPS -->
+
+<section class="related">
+
+<h2>Related Trips</h2>
+
+<div class="related-grid">
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b">
+
+<h3>Ladakh Road Trip</h3>
+
+</div>
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<h3>Kashmir Tour</h3>
+
+</div>
+
+<div class="related-card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+
+<h3>Spiti Valley</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="trip-details.js"></script>
+
+</body>
+
+</html>
